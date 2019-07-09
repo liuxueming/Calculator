@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var errorTips: UIView!
     @IBOutlet weak var allClear: RoundCornerButton!
     @IBOutlet weak var resultDisplay: UILabel!
+    var previousValue:String = ""
+    var currentValue:String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -24,7 +27,11 @@ class ViewController: UIViewController {
         }, completion: nil)
     }
     @IBAction func clickButton(_ sender: RoundCornerButton) {
-        print(sender.tag)
+        previousValue = currentValue
+        currentValue = String(format: "%d", sender.tag)
+        if previousValue == "14" && currentValue == "0"{
+            self.showErrorTipsView(isShow: true)
+        }
     }
     @IBAction func clickRetryButton(_ sender: UIButton) {
         self.showErrorTipsView(isShow: false)
