@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Er2-Xv-Xhq" userLabel="Equal" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="315.66666666666669" y="622.66666666666663" width="93.333333333333314" height="93.333333333333371"/>
+                                <rect key="frame" x="286.5" y="563.5" width="83.5" height="83.5"/>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.59607843137254901" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Er2-Xv-Xhq" secondAttribute="height" multiplier="1:1" id="Co6-Gy-nul"/>
@@ -38,7 +38,7 @@
                                 </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Sj-GX-K8h" userLabel="Dot" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="211.99999999999997" y="622.66666666666663" width="93.666666666666657" height="93.333333333333371"/>
+                                <rect key="frame" x="192.5" y="563.5" width="84" height="83.5"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title=".">
@@ -49,7 +49,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZm-kM-CEn" userLabel="zero" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="5" y="622.66666666666663" width="197" height="93.333333333333371"/>
+                                <rect key="frame" x="5" y="563.5" width="177.5" height="83.5"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="0">
@@ -60,7 +60,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9Q-Oz-FXq" userLabel="add" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="315.66666666666669" y="519" width="93.333333333333314" height="93.666666666666629"/>
+                                <rect key="frame" x="286.5" y="469.5" width="83.5" height="84"/>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.59607843137254901" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="+">
@@ -71,7 +71,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4w-ih-gcj" userLabel="sub" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="315.66666666666669" y="415.66666666666669" width="93.333333333333314" height="93.333333333333314"/>
+                                <rect key="frame" x="286.5" y="376" width="83.5" height="83.5"/>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.59607843137254901" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="-">
@@ -82,7 +82,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZf-bn-Dyd" userLabel="mult" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="315.66666666666669" y="312" width="93.333333333333314" height="93.666666666666686"/>
+                                <rect key="frame" x="286.5" y="282" width="83.5" height="84"/>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.59607843137254901" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="x">
@@ -93,7 +93,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jO-mb-IA1" userLabel="division" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="315.66666666666669" y="208.66666666666666" width="93.333333333333314" height="93.333333333333343"/>
+                                <rect key="frame" x="286.5" y="188.5" width="83.5" height="83.5"/>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.59607843137254901" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="÷">
@@ -104,7 +104,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmV-tb-DpD" userLabel="one" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="5" y="519" width="93.666666666666671" height="93.666666666666629"/>
+                                <rect key="frame" x="5" y="469.5" width="84" height="84"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="1">
@@ -115,7 +115,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPc-1l-IV4" userLabel="two" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="108.66666666666669" y="519" width="93.333333333333314" height="93.666666666666629"/>
+                                <rect key="frame" x="99" y="469.5" width="83.5" height="84"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="2">
@@ -126,7 +126,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kX-NX-cjG" userLabel="three" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="211.99999999999997" y="519" width="93.666666666666657" height="93.666666666666629"/>
+                                <rect key="frame" x="192.5" y="469.5" width="84" height="84"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="3">
@@ -137,7 +137,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcw-tR-oFl" userLabel="five" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="108.66666666666669" y="415.66666666666669" width="93.333333333333314" height="93.333333333333314"/>
+                                <rect key="frame" x="99" y="376" width="83.5" height="83.5"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="5">
@@ -148,7 +148,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAV-x6-fzL" userLabel="six" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="211.99999999999997" y="415.66666666666669" width="93.666666666666657" height="93.333333333333314"/>
+                                <rect key="frame" x="192.5" y="376" width="84" height="83.5"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="6">
@@ -159,7 +159,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e96-ct-ahf" userLabel="seven" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="5" y="312" width="93.666666666666671" height="93.666666666666686"/>
+                                <rect key="frame" x="5" y="282" width="84" height="84"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="7">
@@ -170,7 +170,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q99-he-axM" userLabel="eight" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="108.66666666666669" y="312" width="93.333333333333314" height="93.666666666666686"/>
+                                <rect key="frame" x="99" y="282" width="83.5" height="84"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="8">
@@ -181,7 +181,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nU-Oz-dIw" userLabel="nine" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="211.99999999999997" y="312" width="93.666666666666657" height="93.666666666666686"/>
+                                <rect key="frame" x="192.5" y="282" width="84" height="84"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="9">
@@ -192,7 +192,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WQ-bg-m2Z" userLabel="%" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="211.99999999999997" y="208.66666666666666" width="93.666666666666657" height="93.333333333333343"/>
+                                <rect key="frame" x="192.5" y="188.5" width="84" height="83.5"/>
                                 <color key="backgroundColor" red="0.64705882349999999" green="0.64705882349999999" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="%">
@@ -203,7 +203,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyO-RH-k6F" userLabel="+/-" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="108.66666666666669" y="208.66666666666666" width="93.333333333333314" height="93.333333333333343"/>
+                                <rect key="frame" x="99" y="188.5" width="83.5" height="83.5"/>
                                 <color key="backgroundColor" red="0.64705882349999999" green="0.64705882349999999" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="+/-">
@@ -214,7 +214,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZY-2q-L14" userLabel="four" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="5" y="415.66666666666669" width="93.666666666666671" height="93.333333333333314"/>
+                                <rect key="frame" x="5" y="376" width="84" height="83.5"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="4">
@@ -225,7 +225,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dc1-99-cpH" userLabel="C" customClass="RoundCornerButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="5" y="208.66666666666666" width="93.666666666666671" height="93.333333333333343"/>
+                                <rect key="frame" x="5" y="188.5" width="84" height="83.5"/>
                                 <color key="backgroundColor" red="0.64705882349999999" green="0.64705882349999999" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="AC">
@@ -235,13 +235,14 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="98766" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xg-aR-RRu">
-                                <rect key="frame" x="10" y="150.66666666666666" width="394" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="3Xg-aR-RRu">
+                                <rect key="frame" x="10" y="106.5" width="355" height="72"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="48" id="2cs-ld-JjF"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="ZcP-jp-Jga"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -293,7 +294,6 @@
                             <constraint firstItem="Q99-he-axM" firstAttribute="centerY" secondItem="4nU-Oz-dIw" secondAttribute="centerY" id="Eaj-7n-v5A"/>
                             <constraint firstItem="aZY-2q-L14" firstAttribute="height" secondItem="bcw-tR-oFl" secondAttribute="height" id="Eak-vE-tDN"/>
                             <constraint firstItem="4nU-Oz-dIw" firstAttribute="height" secondItem="EAV-x6-fzL" secondAttribute="height" id="Efg-1h-uOt"/>
-                            <constraint firstItem="3Xg-aR-RRu" firstAttribute="height" relation="lessThanOrEqual" secondItem="dc1-99-cpH" secondAttribute="height" id="Ewt-oS-ONN"/>
                             <constraint firstItem="0jO-mb-IA1" firstAttribute="trailing" secondItem="gZf-bn-Dyd" secondAttribute="trailing" id="GlE-a8-mlv"/>
                             <constraint firstItem="0jO-mb-IA1" firstAttribute="width" secondItem="Er2-Xv-Xhq" secondAttribute="width" id="HbD-4G-6BW"/>
                             <constraint firstItem="bcw-tR-oFl" firstAttribute="trailing" secondItem="cPc-1l-IV4" secondAttribute="trailing" id="Hhj-E5-tfc"/>
@@ -439,74 +439,74 @@
                                 <exclude reference="VlM-lh-NS1"/>
                                 <exclude reference="r9D-Mj-7Hq"/>
                                 <exclude reference="rph-LM-SuJ"/>
-                                <exclude reference="Cng-S9-L4z"/>
-                                <exclude reference="guM-qI-gMP"/>
-                                <exclude reference="oR5-E0-ArT"/>
-                                <exclude reference="qjG-a2-lLW"/>
                                 <exclude reference="JIr-9M-1NQ"/>
                                 <exclude reference="hsF-fg-Xmm"/>
                                 <exclude reference="rC0-8q-Jmy"/>
                                 <exclude reference="xrM-f7-5YZ"/>
-                                <exclude reference="1d0-7f-t1v"/>
-                                <exclude reference="KUm-gA-2vn"/>
-                                <exclude reference="MPG-73-907"/>
-                                <exclude reference="Wbl-7m-RVD"/>
-                                <exclude reference="Eaj-7n-v5A"/>
-                                <exclude reference="MnF-ej-cGx"/>
-                                <exclude reference="Vyg-lq-4BT"/>
-                                <exclude reference="ift-sh-OEa"/>
-                                <exclude reference="1Pm-mI-IKZ"/>
-                                <exclude reference="JdL-K4-Per"/>
-                                <exclude reference="NeP-o5-kzO"/>
-                                <exclude reference="qNt-AZ-sUd"/>
-                                <exclude reference="qaB-mj-2Vb"/>
-                                <exclude reference="sTL-kJ-LMY"/>
-                                <exclude reference="xzn-Bx-1LO"/>
                                 <exclude reference="I0b-qx-lMD"/>
                                 <exclude reference="QB6-xi-FbS"/>
                                 <exclude reference="UIP-Ek-fEg"/>
                                 <exclude reference="pwP-EJ-qPd"/>
+                                <exclude reference="Cng-S9-L4z"/>
+                                <exclude reference="guM-qI-gMP"/>
+                                <exclude reference="oR5-E0-ArT"/>
+                                <exclude reference="qjG-a2-lLW"/>
+                                <exclude reference="Eaj-7n-v5A"/>
+                                <exclude reference="MnF-ej-cGx"/>
+                                <exclude reference="Vyg-lq-4BT"/>
+                                <exclude reference="ift-sh-OEa"/>
                                 <exclude reference="9ZD-bs-b8t"/>
                                 <exclude reference="OH7-tf-s5k"/>
                                 <exclude reference="aAj-FJ-vbs"/>
                                 <exclude reference="mIx-Rd-6Wp"/>
-                                <exclude reference="JTM-cL-QZq"/>
-                                <exclude reference="teq-Yj-8zP"/>
-                                <exclude reference="y9C-AI-B3t"/>
-                                <exclude reference="zGD-ct-TBA"/>
-                                <exclude reference="0OI-fV-HLX"/>
-                                <exclude reference="0Ya-eP-beu"/>
-                                <exclude reference="Q1X-ek-zS3"/>
-                                <exclude reference="ygG-L6-3Zy"/>
                                 <exclude reference="Bfw-9F-QBC"/>
                                 <exclude reference="MeW-4h-4Ag"/>
                                 <exclude reference="NcV-EI-OPn"/>
                                 <exclude reference="T9A-Ck-Nrr"/>
                                 <exclude reference="vwf-ox-dEu"/>
-                                <exclude reference="1aD-Z3-1k0"/>
-                                <exclude reference="Rqd-57-F97"/>
-                                <exclude reference="qAd-Dw-0Lj"/>
-                                <exclude reference="yoi-QB-7Tl"/>
+                                <exclude reference="1Pm-mI-IKZ"/>
+                                <exclude reference="JdL-K4-Per"/>
+                                <exclude reference="NeP-o5-kzO"/>
+                                <exclude reference="qNt-AZ-sUd"/>
+                                <exclude reference="JTM-cL-QZq"/>
+                                <exclude reference="teq-Yj-8zP"/>
+                                <exclude reference="y9C-AI-B3t"/>
+                                <exclude reference="zGD-ct-TBA"/>
+                                <exclude reference="40O-5p-e8D"/>
+                                <exclude reference="Pod-dJ-1K2"/>
+                                <exclude reference="e6k-6D-dtt"/>
                                 <exclude reference="84X-2V-V4H"/>
                                 <exclude reference="QHp-Ge-w5w"/>
                                 <exclude reference="WSr-7l-uSQ"/>
                                 <exclude reference="XH1-Go-gc5"/>
-                                <exclude reference="JH8-rc-9O3"/>
-                                <exclude reference="Wmh-p8-pyI"/>
-                                <exclude reference="YkN-Ke-mW2"/>
-                                <exclude reference="fWh-bH-eRM"/>
-                                <exclude reference="40O-5p-e8D"/>
-                                <exclude reference="Pod-dJ-1K2"/>
-                                <exclude reference="e6k-6D-dtt"/>
+                                <exclude reference="0OI-fV-HLX"/>
+                                <exclude reference="0Ya-eP-beu"/>
+                                <exclude reference="Q1X-ek-zS3"/>
+                                <exclude reference="ygG-L6-3Zy"/>
                                 <exclude reference="Atu-2w-hwb"/>
                                 <exclude reference="CFT-j6-C2r"/>
                                 <exclude reference="K1f-XZ-zsa"/>
                                 <exclude reference="s2w-Ln-6zd"/>
                                 <exclude reference="sjM-1T-T4R"/>
+                                <exclude reference="JH8-rc-9O3"/>
+                                <exclude reference="Wmh-p8-pyI"/>
+                                <exclude reference="YkN-Ke-mW2"/>
+                                <exclude reference="fWh-bH-eRM"/>
+                                <exclude reference="1d0-7f-t1v"/>
+                                <exclude reference="KUm-gA-2vn"/>
+                                <exclude reference="MPG-73-907"/>
+                                <exclude reference="Wbl-7m-RVD"/>
                                 <exclude reference="383-Eh-DFR"/>
                                 <exclude reference="5Xa-dw-1PE"/>
                                 <exclude reference="Idh-0g-S3P"/>
                                 <exclude reference="lmv-VU-dpA"/>
+                                <exclude reference="qaB-mj-2Vb"/>
+                                <exclude reference="sTL-kJ-LMY"/>
+                                <exclude reference="xzn-Bx-1LO"/>
+                                <exclude reference="1aD-Z3-1k0"/>
+                                <exclude reference="Rqd-57-F97"/>
+                                <exclude reference="qAd-Dw-0Lj"/>
+                                <exclude reference="yoi-QB-7Tl"/>
                                 <exclude reference="Jas-Tm-lgB"/>
                                 <exclude reference="JcH-bJ-oEP"/>
                                 <exclude reference="Raw-IO-2M4"/>
@@ -521,7 +521,6 @@
                                 <include reference="f2b-he-Foq"/>
                                 <exclude reference="qTJ-rM-keV"/>
                                 <exclude reference="w5v-Ta-Ze6"/>
-                                <exclude reference="Ewt-oS-ONN"/>
                                 <exclude reference="S8X-As-QY8"/>
                                 <include reference="gsX-vO-tYf"/>
                                 <exclude reference="xw2-IA-EWf"/>
@@ -534,14 +533,6 @@
                                 <exclude reference="pnw-kJ-dYH"/>
                                 <exclude reference="r9D-Mj-7Hq"/>
                                 <include reference="rph-LM-SuJ"/>
-                                <exclude reference="7mF-O4-UeP"/>
-                                <exclude reference="BcB-cw-sDX"/>
-                                <include reference="Cng-S9-L4z"/>
-                                <exclude reference="PfO-Ep-mwu"/>
-                                <include reference="guM-qI-gMP"/>
-                                <include reference="oR5-E0-ArT"/>
-                                <include reference="qjG-a2-lLW"/>
-                                <exclude reference="tpI-Hf-jzJ"/>
                                 <exclude reference="8xK-zI-rUu"/>
                                 <include reference="JIr-9M-1NQ"/>
                                 <exclude reference="Jrq-fp-U15"/>
@@ -551,37 +542,6 @@
                                 <exclude reference="rT4-tj-dAC"/>
                                 <exclude reference="tfN-5X-O1G"/>
                                 <include reference="xrM-f7-5YZ"/>
-                                <include reference="1d0-7f-t1v"/>
-                                <exclude reference="8Wr-OO-rne"/>
-                                <exclude reference="Anh-ab-OhW"/>
-                                <include reference="KUm-gA-2vn"/>
-                                <include reference="MPG-73-907"/>
-                                <exclude reference="Ptv-Jj-rMk"/>
-                                <include reference="Wbl-7m-RVD"/>
-                                <exclude reference="Z8p-BO-ILN"/>
-                                <exclude reference="lKu-h7-hcG"/>
-                                <exclude reference="Bcg-5B-mN9"/>
-                                <include reference="Eaj-7n-v5A"/>
-                                <include reference="MnF-ej-cGx"/>
-                                <include reference="Vyg-lq-4BT"/>
-                                <exclude reference="Zg3-4l-IHr"/>
-                                <exclude reference="aNG-tO-we8"/>
-                                <include reference="ift-sh-OEa"/>
-                                <exclude reference="wTD-rg-5jO"/>
-                                <include reference="1Pm-mI-IKZ"/>
-                                <exclude reference="Eak-vE-tDN"/>
-                                <include reference="JdL-K4-Per"/>
-                                <include reference="NeP-o5-kzO"/>
-                                <exclude reference="YqH-sX-p40"/>
-                                <exclude reference="hl3-2n-AFa"/>
-                                <include reference="qNt-AZ-sUd"/>
-                                <exclude reference="uE2-qz-iXn"/>
-                                <exclude reference="15n-Hk-YCL"/>
-                                <exclude reference="eg3-nw-Vqj"/>
-                                <exclude reference="mCF-o0-Iqk"/>
-                                <include reference="qaB-mj-2Vb"/>
-                                <include reference="sTL-kJ-LMY"/>
-                                <include reference="xzn-Bx-1LO"/>
                                 <exclude reference="1B4-mg-xTR"/>
                                 <include reference="I0b-qx-lMD"/>
                                 <include reference="QB6-xi-FbS"/>
@@ -590,6 +550,22 @@
                                 <exclude reference="fm7-lh-OAM"/>
                                 <include reference="pwP-EJ-qPd"/>
                                 <exclude reference="xMj-Ms-lb1"/>
+                                <exclude reference="7mF-O4-UeP"/>
+                                <exclude reference="BcB-cw-sDX"/>
+                                <include reference="Cng-S9-L4z"/>
+                                <exclude reference="PfO-Ep-mwu"/>
+                                <include reference="guM-qI-gMP"/>
+                                <include reference="oR5-E0-ArT"/>
+                                <include reference="qjG-a2-lLW"/>
+                                <exclude reference="tpI-Hf-jzJ"/>
+                                <exclude reference="Bcg-5B-mN9"/>
+                                <include reference="Eaj-7n-v5A"/>
+                                <include reference="MnF-ej-cGx"/>
+                                <include reference="Vyg-lq-4BT"/>
+                                <exclude reference="Zg3-4l-IHr"/>
+                                <exclude reference="aNG-tO-we8"/>
+                                <include reference="ift-sh-OEa"/>
+                                <exclude reference="wTD-rg-5jO"/>
                                 <exclude reference="11f-xq-qI3"/>
                                 <include reference="9ZD-bs-b8t"/>
                                 <exclude reference="Efg-1h-uOt"/>
@@ -598,21 +574,6 @@
                                 <include reference="aAj-FJ-vbs"/>
                                 <include reference="mIx-Rd-6Wp"/>
                                 <exclude reference="ttp-7w-Hco"/>
-                                <exclude reference="3aP-YC-oAV"/>
-                                <exclude reference="Hhj-E5-tfc"/>
-                                <include reference="JTM-cL-QZq"/>
-                                <exclude reference="LBk-qC-i5D"/>
-                                <exclude reference="s79-gK-vDT"/>
-                                <include reference="teq-Yj-8zP"/>
-                                <include reference="y9C-AI-B3t"/>
-                                <include reference="zGD-ct-TBA"/>
-                                <include reference="0OI-fV-HLX"/>
-                                <include reference="0Ya-eP-beu"/>
-                                <exclude reference="2Om-hq-FvE"/>
-                                <exclude reference="BhB-sp-FMk"/>
-                                <include reference="Q1X-ek-zS3"/>
-                                <exclude reference="iLd-q9-Ztx"/>
-                                <include reference="ygG-L6-3Zy"/>
                                 <include reference="Bfw-9F-QBC"/>
                                 <exclude reference="GlE-a8-mlv"/>
                                 <exclude reference="HbD-4G-6BW"/>
@@ -621,14 +582,29 @@
                                 <include reference="T9A-Ck-Nrr"/>
                                 <exclude reference="a5o-4N-duI"/>
                                 <include reference="vwf-ox-dEu"/>
-                                <include reference="1aD-Z3-1k0"/>
-                                <include reference="Rqd-57-F97"/>
-                                <exclude reference="VoP-t8-NKo"/>
-                                <exclude reference="gaw-e6-lbm"/>
-                                <include reference="qAd-Dw-0Lj"/>
-                                <exclude reference="r4N-wT-O4S"/>
-                                <exclude reference="xH5-gA-htS"/>
-                                <include reference="yoi-QB-7Tl"/>
+                                <include reference="1Pm-mI-IKZ"/>
+                                <exclude reference="Eak-vE-tDN"/>
+                                <include reference="JdL-K4-Per"/>
+                                <include reference="NeP-o5-kzO"/>
+                                <exclude reference="YqH-sX-p40"/>
+                                <exclude reference="hl3-2n-AFa"/>
+                                <include reference="qNt-AZ-sUd"/>
+                                <exclude reference="uE2-qz-iXn"/>
+                                <exclude reference="3aP-YC-oAV"/>
+                                <exclude reference="Hhj-E5-tfc"/>
+                                <include reference="JTM-cL-QZq"/>
+                                <exclude reference="LBk-qC-i5D"/>
+                                <exclude reference="s79-gK-vDT"/>
+                                <include reference="teq-Yj-8zP"/>
+                                <include reference="y9C-AI-B3t"/>
+                                <include reference="zGD-ct-TBA"/>
+                                <include reference="40O-5p-e8D"/>
+                                <include reference="Pod-dJ-1K2"/>
+                                <exclude reference="YCY-eH-mBl"/>
+                                <exclude reference="dW6-WN-vRe"/>
+                                <include reference="e6k-6D-dtt"/>
+                                <exclude reference="j9i-47-4cj"/>
+                                <exclude reference="pQc-aR-amI"/>
                                 <exclude reference="7iO-qZ-aZw"/>
                                 <include reference="84X-2V-V4H"/>
                                 <exclude reference="PKe-gu-3Fq"/>
@@ -637,21 +613,13 @@
                                 <include reference="WSr-7l-uSQ"/>
                                 <include reference="XH1-Go-gc5"/>
                                 <exclude reference="jTo-Xt-00Y"/>
-                                <exclude reference="J6R-aa-OFe"/>
-                                <include reference="JH8-rc-9O3"/>
-                                <exclude reference="VWu-Hz-xJK"/>
-                                <include reference="Wmh-p8-pyI"/>
-                                <include reference="YkN-Ke-mW2"/>
-                                <include reference="fWh-bH-eRM"/>
-                                <exclude reference="hFS-5R-a5s"/>
-                                <exclude reference="x9y-6i-DnP"/>
-                                <include reference="40O-5p-e8D"/>
-                                <include reference="Pod-dJ-1K2"/>
-                                <exclude reference="YCY-eH-mBl"/>
-                                <exclude reference="dW6-WN-vRe"/>
-                                <include reference="e6k-6D-dtt"/>
-                                <exclude reference="j9i-47-4cj"/>
-                                <exclude reference="pQc-aR-amI"/>
+                                <include reference="0OI-fV-HLX"/>
+                                <include reference="0Ya-eP-beu"/>
+                                <exclude reference="2Om-hq-FvE"/>
+                                <exclude reference="BhB-sp-FMk"/>
+                                <include reference="Q1X-ek-zS3"/>
+                                <exclude reference="iLd-q9-Ztx"/>
+                                <include reference="ygG-L6-3Zy"/>
                                 <exclude reference="0sT-Rr-AVm"/>
                                 <exclude reference="Atu-2w-hwb"/>
                                 <include reference="CFT-j6-C2r"/>
@@ -661,6 +629,23 @@
                                 <exclude reference="p7w-p2-97g"/>
                                 <include reference="s2w-Ln-6zd"/>
                                 <include reference="sjM-1T-T4R"/>
+                                <exclude reference="J6R-aa-OFe"/>
+                                <include reference="JH8-rc-9O3"/>
+                                <exclude reference="VWu-Hz-xJK"/>
+                                <include reference="Wmh-p8-pyI"/>
+                                <include reference="YkN-Ke-mW2"/>
+                                <include reference="fWh-bH-eRM"/>
+                                <exclude reference="hFS-5R-a5s"/>
+                                <exclude reference="x9y-6i-DnP"/>
+                                <include reference="1d0-7f-t1v"/>
+                                <exclude reference="8Wr-OO-rne"/>
+                                <exclude reference="Anh-ab-OhW"/>
+                                <include reference="KUm-gA-2vn"/>
+                                <include reference="MPG-73-907"/>
+                                <exclude reference="Ptv-Jj-rMk"/>
+                                <include reference="Wbl-7m-RVD"/>
+                                <exclude reference="Z8p-BO-ILN"/>
+                                <exclude reference="lKu-h7-hcG"/>
                                 <include reference="383-Eh-DFR"/>
                                 <include reference="5Xa-dw-1PE"/>
                                 <exclude reference="BWr-iD-n0N"/>
@@ -669,6 +654,20 @@
                                 <include reference="lmv-VU-dpA"/>
                                 <exclude reference="qGu-Z6-meS"/>
                                 <exclude reference="rdt-oC-SLl"/>
+                                <exclude reference="15n-Hk-YCL"/>
+                                <exclude reference="eg3-nw-Vqj"/>
+                                <exclude reference="mCF-o0-Iqk"/>
+                                <include reference="qaB-mj-2Vb"/>
+                                <include reference="sTL-kJ-LMY"/>
+                                <include reference="xzn-Bx-1LO"/>
+                                <include reference="1aD-Z3-1k0"/>
+                                <include reference="Rqd-57-F97"/>
+                                <exclude reference="VoP-t8-NKo"/>
+                                <exclude reference="gaw-e6-lbm"/>
+                                <include reference="qAd-Dw-0Lj"/>
+                                <exclude reference="r4N-wT-O4S"/>
+                                <exclude reference="xH5-gA-htS"/>
+                                <include reference="yoi-QB-7Tl"/>
                                 <exclude reference="7ai-IB-BGB"/>
                                 <include reference="Jas-Tm-lgB"/>
                                 <include reference="JcH-bJ-oEP"/>
