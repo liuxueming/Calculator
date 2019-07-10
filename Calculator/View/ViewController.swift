@@ -10,31 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var errorTips: UIView!
     @IBOutlet weak var allClear: RoundCornerButton!
     @IBOutlet weak var resultDisplay: UILabel!
     var previousValue:String = ""
     var currentValue:String = ""
-    
+    lazy var alertView:CustomAlertView = CustomAlertView()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setupAlertView()
     }
-    func showErrorTipsView(isShow:Bool) -> Void {
-        
-        UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.0, options: [], animations: { () -> Void in
-            self.errorTips.isHidden = !isShow
-        }, completion: nil)
+    func setupAlertView() -> Void {
+        alertView.translatesAutoresizingMaskIntoConstraints = false
+        alertView.backgroundColor = UIColor.white
+        view.addSubview(alertView)
+        alertView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 30).isActive = true
+        alertView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -30).isActive = true
+        alertView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true;
+        alertView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor).isActive = true;
     }
     @IBAction func clickButton(_ sender: RoundCornerButton) {
         previousValue = currentValue
         currentValue = String(format: "%d", sender.tag)
         if previousValue == "14" && currentValue == "0"{
-            showErrorTipsView(isShow: true)
+            alertView.show()
         }
     }
-    @IBAction func clickRetryButton(_ sender: UIButton) {
-        showErrorTipsView(isShow: false)
-    }
+   
 }
 
