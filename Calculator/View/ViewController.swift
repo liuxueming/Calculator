@@ -30,11 +30,11 @@ class ViewController: UIViewController {
         previousValue = currentValue
         currentValue = String(format: "%d", sender.tag)
         if previousValue == "14" && currentValue == "0"{
-            self.showErrorTipsView(isShow: true)
+            showErrorTipsView(isShow: true)
         }
     }
     @IBAction func clickRetryButton(_ sender: UIButton) {
-        self.showErrorTipsView(isShow: false)
+        showErrorTipsView(isShow: false)
     }
 }
 
