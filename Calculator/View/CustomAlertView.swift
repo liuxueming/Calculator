@@ -16,7 +16,9 @@ import UIKit
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.isHidden = true
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.backgroundColor = UIColor.white
+
         setupCornerRadius()
         setupSubviews()
         addSubviewsConstraints()
@@ -68,10 +70,19 @@ import UIKit
         retry.topAnchor.constraint(equalTo: tips.bottomAnchor, constant: 10).isActive = true
         retry.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10).isActive = true
     }
-    func show() -> Void {
+    func showAddedTo(_ view: UIView) -> Void {
         UIView.animate(withDuration: 0.5) {
             self.isHidden = false
+            view.addSubview(self)
+            self.setupSelfConstraints(superView: view)
         }
+    }
+    func setupSelfConstraints(superView:UIView) -> Void {
+        
+        self.leftAnchor.constraint(equalTo:superView.safeAreaLayoutGuide.leftAnchor, constant: 30).isActive = true
+        self.rightAnchor.constraint(equalTo:superView.safeAreaLayoutGuide.rightAnchor, constant: -30).isActive = true
+        self.centerXAnchor.constraint(equalTo: superView.safeAreaLayoutGuide.centerXAnchor).isActive = true;
+        self.centerYAnchor.constraint(equalTo: superView.safeAreaLayoutGuide.centerYAnchor).isActive = true;
     }
     func dismiss() -> Void {
         UIView.animate(withDuration: 1.0) {
