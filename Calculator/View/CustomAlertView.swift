@@ -21,7 +21,7 @@ import UIKit
         setupSubviews()
         addSubviewsConstraints()
     }
-    @objc private func composeBtnClick(btn: UIButton) {
+    @objc private func btnClick(btn: UIButton) {
         dismiss()
     }
     required init?(coder aDecoder: NSCoder) {
@@ -47,7 +47,7 @@ import UIKit
         retry.setTitle("重试", for: .normal)
         retry.layer.masksToBounds = true
         retry.layer.cornerRadius = 6.0
-        retry.addTarget(self, action:#selector(composeBtnClick), for: .touchUpInside)
+        retry.addTarget(self, action:#selector(btnClick), for: .touchUpInside)
         addSubview(retry)
     }
     func addSubviewsConstraints() -> Void {
