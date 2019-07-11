@@ -40,7 +40,7 @@ import UIKit
         
         tips.translatesAutoresizingMaskIntoConstraints = false
         tips.numberOfLines = 0
-        tips.text = "分母不能为0分母n分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0不能为0分母不能为0分母不能为0分分母不能为0分母不能为0分母不能为0母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母n分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0不能为0分母不能为0分母不能为0分分母不能为"
+        tips.text = "分母不能为0分母n分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0不能为0分母不能为0分母不能为0分分母不能为0分母不能为0分母不能为0母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母n分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0不能为0分母不能为0分母不能为0分分母不能为分母不能为0分母n分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0不能为0分母不能为0分母不能为0分分母不能为0分母不能为0分母不能为0母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母n分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0不能为0分母不能为0分母不能为0分分母不能为分母不能为0分母n分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0不能为0分母不能为0分母不能为0分分母不能为0分母不能为0分母不能为0母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母n分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0分母不能为0不能为0分母不能为0分母不能为0分分母不能为"
         tips.textAlignment = .center
         addSubview(tips)
         
@@ -58,7 +58,7 @@ import UIKit
         image.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
         image.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true;
         
-        tips.heightAnchor.constraint(greaterThanOrEqualToConstant: 30.0).isActive = true
+        tips.heightAnchor.constraint(lessThanOrEqualToConstant: 220.0).isActive = true
         tips.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
         tips.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10).isActive = true
         tips.topAnchor.constraint(equalTo: image.bottomAnchor, constant: 10).isActive = true
