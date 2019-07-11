@@ -78,15 +78,16 @@ import UIKit
         }
     }
     func setupSelfConstraints(superView:UIView) -> Void {
-        
         self.leftAnchor.constraint(equalTo:superView.safeAreaLayoutGuide.leftAnchor, constant: 30).isActive = true
         self.rightAnchor.constraint(equalTo:superView.safeAreaLayoutGuide.rightAnchor, constant: -30).isActive = true
         self.centerXAnchor.constraint(equalTo: superView.safeAreaLayoutGuide.centerXAnchor).isActive = true;
         self.centerYAnchor.constraint(equalTo: superView.safeAreaLayoutGuide.centerYAnchor).isActive = true;
     }
     func dismiss() -> Void {
-        UIView.animate(withDuration: 1.0) {
+        UIView.animate(withDuration: 1.0, animations: {
             self.isHidden = true
+        }) { (true) in
+            self.removeFromSuperview()
         }
     }
 }
