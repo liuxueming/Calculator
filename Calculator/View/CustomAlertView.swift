@@ -15,9 +15,23 @@ import UIKit
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         self.isHidden = true
+        setupCornerRadius()
+        setupSubviews()
+        addSubviewsConstraints()
+    }
+    @objc private func composeBtnClick(btn: UIButton) {
+        dismiss()
+    }
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    func setupCornerRadius() -> Void {
         self.layer.masksToBounds = true
         self.layer.cornerRadius = 10.0
+    }
+    func setupSubviews() -> Void {
         image.translatesAutoresizingMaskIntoConstraints = false
         image.image = UIImage.init(named: "error")
         addSubview(image)
@@ -36,14 +50,7 @@ import UIKit
         retry.addTarget(self, action:#selector(composeBtnClick), for: .touchUpInside)
         addSubview(retry)
     }
-    @objc private func composeBtnClick(btn: UIButton) {
-        dismiss()
-    }
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    override func layoutSubviews() {
-        super.layoutSubviews()
+    func addSubviewsConstraints() -> Void {
         image.heightAnchor.constraint(equalToConstant: 60.0).isActive = true
         image.widthAnchor.constraint(equalToConstant: 60.0).isActive = true
         image.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
