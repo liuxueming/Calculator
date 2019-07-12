@@ -21,7 +21,6 @@ class CustomAlertView: UIView {
         
         self.translatesAutoresizingMaskIntoConstraints = false
         self.backgroundColor = UIColor.white
-
         setupCornerRadius()
         setupSubviews()
         addSubviewsConstraints()
@@ -56,22 +55,29 @@ class CustomAlertView: UIView {
         addSubview(retry)
     }
     func addSubviewsConstraints() {
-        image.heightAnchor.constraint(equalToConstant: 60.0).isActive = true
-        image.widthAnchor.constraint(equalToConstant: 60.0).isActive = true
-        image.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
+        let imageSideLength:CGFloat = 60.0
+        let imageOffset:CGFloat = 10.0
+        image.heightAnchor.constraint(equalToConstant: imageSideLength).isActive = true
+        image.widthAnchor.constraint(equalToConstant: imageSideLength).isActive = true
+        image.topAnchor.constraint(equalTo: self.topAnchor, constant: imageOffset).isActive = true
         image.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true;
         
-        tips.heightAnchor.constraint(lessThanOrEqualToConstant: 220.0).isActive = true
-        tips.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
-        tips.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10).isActive = true
-        tips.topAnchor.constraint(equalTo: image.bottomAnchor, constant: 10).isActive = true
+        let tipsMaxHeight:CGFloat = 220.0
+        let tipsOffset:CGFloat = 10.0
+        tips.heightAnchor.constraint(lessThanOrEqualToConstant: tipsMaxHeight).isActive = true
+        tips.leftAnchor.constraint(equalTo: self.leftAnchor, constant: tipsOffset).isActive = true
+        tips.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -tipsOffset).isActive = true
+        tips.topAnchor.constraint(equalTo: image.bottomAnchor, constant: tipsOffset).isActive = true
         tips.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true;
         
-        retry.heightAnchor.constraint(equalToConstant:45.0).isActive = true
-        retry.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 30).isActive = true
-        retry.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -30).isActive = true
-        retry.topAnchor.constraint(equalTo: tips.bottomAnchor, constant: 10).isActive = true
-        retry.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10).isActive = true
+        let retryHeight:CGFloat = 45.0
+        let retryLeftAndRightOffset:CGFloat = 30.0
+        let retryTopAndBottomOffset:CGFloat = 10.0
+        retry.heightAnchor.constraint(equalToConstant:retryHeight).isActive = true
+        retry.leftAnchor.constraint(equalTo: self.leftAnchor, constant: retryLeftAndRightOffset).isActive = true
+        retry.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -retryLeftAndRightOffset).isActive = true
+        retry.topAnchor.constraint(equalTo: tips.bottomAnchor, constant: retryTopAndBottomOffset).isActive = true
+        retry.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -retryTopAndBottomOffset).isActive = true
     }
     func showAddedTo(_ view: UIView) {
         UIView.animate(withDuration: 0.5) {
