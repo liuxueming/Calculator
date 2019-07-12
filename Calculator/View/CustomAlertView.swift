@@ -8,10 +8,13 @@
 
 import UIKit
 
-@IBDesignable class CustomAlertView: UIView {
+class CustomAlertView: UIView {
     lazy var image:UIImageView = UIImageView()
     lazy var tips:UILabel = UILabel()
-    lazy var retry:UIButton = UIButton()
+    lazy var retry:UIButton = {
+        let bt = UIButton()
+        return bt
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,11 +32,11 @@ import UIKit
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    func setupCornerRadius() -> Void {
+    func setupCornerRadius() {
         self.layer.masksToBounds = true
         self.layer.cornerRadius = 10.0
     }
-    func setupSubviews() -> Void {
+    func setupSubviews() {
         image.translatesAutoresizingMaskIntoConstraints = false
         image.image = UIImage.init(named: "error")
         addSubview(image)
@@ -52,7 +55,7 @@ import UIKit
         retry.addTarget(self, action:#selector(btnClick), for: .touchUpInside)
         addSubview(retry)
     }
-    func addSubviewsConstraints() -> Void {
+    func addSubviewsConstraints() {
         image.heightAnchor.constraint(equalToConstant: 60.0).isActive = true
         image.widthAnchor.constraint(equalToConstant: 60.0).isActive = true
         image.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
@@ -70,20 +73,20 @@ import UIKit
         retry.topAnchor.constraint(equalTo: tips.bottomAnchor, constant: 10).isActive = true
         retry.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10).isActive = true
     }
-    func showAddedTo(_ view: UIView) -> Void {
+    func showAddedTo(_ view: UIView) {
         UIView.animate(withDuration: 0.5) {
             self.isHidden = false
             view.addSubview(self)
             self.setupSelfConstraints(superView: view)
         }
     }
-    func setupSelfConstraints(superView:UIView) -> Void {
+    func setupSelfConstraints(superView:UIView) {
         self.leftAnchor.constraint(equalTo:superView.safeAreaLayoutGuide.leftAnchor, constant: 30).isActive = true
         self.rightAnchor.constraint(equalTo:superView.safeAreaLayoutGuide.rightAnchor, constant: -30).isActive = true
         self.centerXAnchor.constraint(equalTo: superView.safeAreaLayoutGuide.centerXAnchor).isActive = true;
         self.centerYAnchor.constraint(equalTo: superView.safeAreaLayoutGuide.centerYAnchor).isActive = true;
     }
-    func dismiss() -> Void {
+    func dismiss() {
         UIView.animate(withDuration: 1.0, animations: {
             self.isHidden = true
         }) { (true) in
