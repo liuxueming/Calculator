@@ -75,16 +75,9 @@ class CustomAlertView: UIView {
     }
     func showAddedTo(_ view: UIView) {
         UIView.animate(withDuration: 0.5) {
-            self.isHidden = false
             view.addSubview(self)
-            self.setupSelfConstraints(superView: view)
+            self.isHidden = false
         }
-    }
-    func setupSelfConstraints(superView:UIView) {
-        self.leftAnchor.constraint(equalTo:superView.safeAreaLayoutGuide.leftAnchor, constant: 30).isActive = true
-        self.rightAnchor.constraint(equalTo:superView.safeAreaLayoutGuide.rightAnchor, constant: -30).isActive = true
-        self.centerXAnchor.constraint(equalTo: superView.safeAreaLayoutGuide.centerXAnchor).isActive = true;
-        self.centerYAnchor.constraint(equalTo: superView.safeAreaLayoutGuide.centerYAnchor).isActive = true;
     }
     func dismiss() {
         UIView.animate(withDuration: 1.0, animations: {
