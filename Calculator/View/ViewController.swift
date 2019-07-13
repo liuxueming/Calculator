@@ -33,10 +33,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultDisplay: UILabel!
     var previousValue:CalculatorButton?
     var currentValue:CalculatorButton?
-    lazy var alertView:CustomAlertView? = {
-        let alert = CustomAlertView()
-        return alert
-    }()
     lazy var CalculatorButtonTags:Dictionary = { () -> [Int : ViewController.CalculatorButton] in
         let buttonTags = [0 : CalculatorButton.zero,
                           1 : CalculatorButton.one,
@@ -64,16 +60,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     func showAlert(){
-        alertView?.showAddedTo(view)
-        setupAlertConstraints()
+        let alert = CustomAlertView()
+        alert.showAddedTo(view)
+        setupAlertConstraints(alert)
     }
-    func setupAlertConstraints() {
+    func setupAlertConstraints(_ alertView:CustomAlertView) {
         let safeAreaLayoutGuide = view.safeAreaLayoutGuide
         let offset:CGFloat = 30.0
-        alertView?.leftAnchor.constraint(equalTo:safeAreaLayoutGuide.leftAnchor, constant: offset).isActive = true
-        alertView?.rightAnchor.constraint(equalTo:safeAreaLayoutGuide.rightAnchor, constant: -offset).isActive = true
-        alertView?.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true;
-        alertView?.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor).isActive = true;
+        alertView.leftAnchor.constraint(equalTo:safeAreaLayoutGuide.leftAnchor, constant: offset).isActive = true
+        alertView.rightAnchor.constraint(equalTo:safeAreaLayoutGuide.rightAnchor, constant: -offset).isActive = true
+        alertView.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true;
+        alertView.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor).isActive = true;
     }
     @IBAction func clickButton(_ sender: RoundCornerButton) {
         previousValue = currentValue

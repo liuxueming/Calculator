@@ -9,12 +9,9 @@
 import UIKit
 
 class CustomAlertView: UIView {
-    lazy var image:UIImageView = UIImageView()
-    lazy var tips:UILabel = UILabel()
-    lazy var retry:UIButton = {
-        let bt = UIButton()
-        return bt
-    }()
+    var image:UIImageView = UIImageView()
+    var tips:UILabel = UILabel()
+    var retry:UIButton = UIButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
