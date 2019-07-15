@@ -32,17 +32,19 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var allClear: RoundCornerButton!
     @IBOutlet weak var resultDisplay: UILabel!
-    var previousValue:CalculatorButton?
-    var currentValue:CalculatorButton?
+    var previousValue: CalculatorButton?
+    var currentValue: CalculatorButton?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    func showAlert(){
+    
+    func showAlert() {
         let alert = CustomAlertView()
         alert.showAddedTo(view)
         setupAlertConstraints(alert)
     }
+    
     func setupAlertConstraints(_ alertView:CustomAlertView) {
         let safeAreaLayoutGuide = view.safeAreaLayoutGuide
         let offset:CGFloat = 30.0
@@ -51,6 +53,7 @@ class ViewController: UIViewController {
         alertView.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true;
         alertView.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor).isActive = true;
     }
+    
     @IBAction func clickButton(_ sender: RoundCornerButton) {
         previousValue = currentValue
         currentValue = CalculatorButton(rawValue: sender.tag)
