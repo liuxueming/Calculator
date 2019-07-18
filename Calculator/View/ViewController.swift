@@ -36,7 +36,6 @@ class ViewController: UIViewController {
     var currentValue: CalculatorButton?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     func showAlert() {
@@ -62,4 +61,3 @@ class ViewController: UIViewController {
         }
     }
 }
-
