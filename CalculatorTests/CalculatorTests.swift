@@ -2,7 +2,7 @@
 //  CalculatorTests.swift
 //  CalculatorTests
 //
-//  Created by xueming.liu on 2019/7/9.
+//  Created by yangting on 2019/7/9.
 //  Copyright © 2019 xueming.liu. All rights reserved.
 //
 
